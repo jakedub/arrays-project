@@ -105,11 +105,10 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     for (let i=0; i<first.length; i++){
-      for (let j=0; i<second.length; j++)
-      if (first[i] === second[j]) {  //applies the integer of first with second
-        same.push (first[i]); //if the same push first interger
+      if (first[i] === second[i]) {
+        same.push(first[i]); //if the same push first interger and second integer
       } else {
-        same.push (second[j]); //if not the same push second integer
+        same.push(first[i] +", "+ (second[i])); //if not the same push second integer
       }
     }
     return same;
