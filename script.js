@@ -107,9 +107,7 @@ function union(){
     for (let i=0; i<first.length; i++){
       if (first[i] === second[i]) {
         same.push(first[i]); //if the same push first interger and second integer
-      } else {
-        same.push(first[i] +", "+ (second[i])); //if not the same push second integer
-      }
+      } 
     }
     return same;
 }
